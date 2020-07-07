@@ -3,5 +3,11 @@
 //Rust is a block-scoped language
 pub fn run() {
     let name = "Beau";
-    println!("My name is {}", name);
+
+    //mut - Makes variable mutable
+    let mut age = 30;
+    println!("My name is {} and I am {}", name, age);
+
+    age = 31;
+    println!("My name is {} and I am {}", name, age);
 }
