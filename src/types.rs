@@ -37,5 +37,8 @@ pub fn run() {
     //Char type
     let a1 = 'a';
 
-    println!("{:?}", (x, y, z, is_true, is_true_expression, a1))
+    //Unicode character
+    let face = '\u{1F600}';
+
+    println!("{:?}", (x, y, z, is_true, is_true_expression, a1, face))
 }
