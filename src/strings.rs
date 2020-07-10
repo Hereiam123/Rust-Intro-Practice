@@ -49,11 +49,15 @@ pub fn run() {
     s.push('a');
     s.push('b');
 
-    //Assert string
+    //Assert string length
     assert_eq!(2, s.len());
 
     //Assert fail
-    assert_eq!(3, s.len());
+    //Should throw compile error
+    //assert_eq!(3, s.len());
+
+    //Assert capacity
+    assert_eq!(10, s.capacity());
 
     println!("{:?}", (hello, hello2, s));
 }
