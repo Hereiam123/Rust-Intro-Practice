@@ -6,10 +6,10 @@ or own string data*/
 
 pub fn run() {
     //Standard str
-    let mut hello = "Hello";
+    let hello = "Hello";
 
     //Growable String
-    let mut hello2 = String::from("Hello");
+    let mut hello2 = String::from("Hello ");
 
     //Get length of string
     println!("Length: {}", hello.len());
@@ -20,7 +20,40 @@ pub fn run() {
 
     //Pushing individual character
     //to String
-    hello2.push('a');
+    hello2.push('W');
 
-    println!("{:?}", (hello, hello2));
+    let hello3 = "orld!";
+
+    //Pushing string to String
+    hello2.push_str(hello3);
+
+    //Capacity of string in bytes
+    println!("Capacity {}", hello2.capacity());
+
+    //Check if empty
+    println!("Is Empty {}", hello2.is_empty());
+
+    //Contains substring
+    println!("Contains 'World' {}", hello2.contains("World"));
+
+    //Replace
+    println!("Replace: {}", hello2.replace("World", "There"));
+
+    //Loop through string by whitespace
+    for word in hello2.split_whitespace() {
+        println!("{}", word);
+    }
+
+    //Create string with capacity
+    let mut s = String::with_capacity(10);
+    s.push('a');
+    s.push('b');
+
+    //Assert string
+    assert_eq!(2, s.len());
+
+    //Assert fail
+    assert_eq!(3, s.len());
+
+    println!("{:?}", (hello, hello2, s));
 }
