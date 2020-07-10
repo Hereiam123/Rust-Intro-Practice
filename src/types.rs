@@ -8,4 +8,22 @@ Tuples
 Arrays
 */
 
-pub fn run() {}
+//Rust is statically typed, which means
+//That it must know the types of all
+//variables at compile time, however, the compiler
+//can usually infer what type is wanted
+
+pub fn run() {
+    //Default is "i32"
+    let x = 1;
+
+    //Default is "f64"
+    let y = 2.5;
+
+    //Add explicit type
+    let y: i64 = 4545454545454545;
+
+    //Find max size
+    println!("Max i32 {}", std::i32::MAX);
+    println!("Max i32 {}", std::i64::MAX);
+}
