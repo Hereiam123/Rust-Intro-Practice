@@ -21,9 +21,21 @@ pub fn run() {
     let y = 2.5;
 
     //Add explicit type
-    let y: i64 = 4545454545454545;
+    let z: i64 = 4545454545454545;
 
     //Find max size
     println!("Max i32 {}", std::i32::MAX);
     println!("Max i32 {}", std::i64::MAX);
+
+    //Boolean
+    //Could set its type
+    let is_true: bool = true;
+
+    //Get boolean from expression
+    let is_true_expression = 10 > 2;
+
+    //Char type
+    let a1 = 'a';
+
+    println!("{:?}", (x, y, z, is_true, is_true_expression, a1))
 }
