@@ -1,5 +1,6 @@
 //Arrays - Fixed list where elements
 //are the same data types
+use std::mem;
 
 pub fn run() {
     //Not correct length
@@ -21,7 +22,11 @@ pub fn run() {
     println!("Array length: {}", numbers.len());
 
     //Get amount of memeory allocated in stack
-    println!("Array mem usage: {}", std::mem::size_of_val(&numbers));
+    println!("Array mem usage: {}", mem::size_of_val(&numbers));
+
+    //Get slice of array, in range
+    let slice: &[i32] = &numbers[0..2];
+    println!("Slice: {:?}", slice);
 
     println!("{:?}", numbers);
 }
