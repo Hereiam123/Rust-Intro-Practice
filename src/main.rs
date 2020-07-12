@@ -4,6 +4,7 @@ mod arrays;
 mod conditionals;
 mod functions;
 mod loops;
+mod pointer_ref;
 mod strings;
 mod tuples;
 mod types;
@@ -20,5 +21,6 @@ fn main() {
     //vectors::run();
     //conditionals::run();
     //loops::run();
-    functions::run();
+    //functions::run();
+    pointer_ref::run();
 }
