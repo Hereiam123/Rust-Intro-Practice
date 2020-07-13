@@ -2,6 +2,7 @@
 //mod print;
 mod arrays;
 mod conditionals;
+mod enums;
 mod functions;
 mod loops;
 mod pointer_ref;
@@ -24,5 +25,6 @@ fn main() {
     //loops::run();
     //functions::run();
     //pointer_ref::run();
-    structs::run();
+    //structs::run();
+    enums::run();
 }
