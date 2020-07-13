@@ -1,6 +1,7 @@
 //mod - Module
 //mod print;
 mod arrays;
+mod cli;
 mod conditionals;
 mod enums;
 mod functions;
@@ -26,5 +27,6 @@ fn main() {
     //functions::run();
     //pointer_ref::run();
     //structs::run();
-    enums::run();
+    //enums::run();
+    cli::run();
 }
